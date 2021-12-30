@@ -1,27 +1,30 @@
 import styled, { css } from 'styled-components'
+import SignInButton from '../SignInButton';
 
 export const Container = styled.header`
   ${({ theme }) => css`
     height: 5rem;
-    border-bottom: 1px solid ${theme.colors.gray_800}
+    border-bottom: 1px solid ${theme.colors.gray_800};
   `}
 `;
 
-export const Content = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    align-items: center;
-    
-    max-width: 1120px;
-    height: 5rem;
-    margin: 0 auto;
-    padding: 0 2rem;
+export const Button = styled(SignInButton)`
+  margin-left: auto;
+`;
 
-    > nav {
-      margin-left: 5rem;
-      height: 5rem;
-    }
-  `}
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  
+  max-width: 1120px;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  > nav {
+    margin-left: 5rem;
+    height: 5rem;
+  }
 `;
 
 interface ILinkProps {

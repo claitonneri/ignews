@@ -7,7 +7,8 @@ export default {
     gray_800: '#29292e',
     gray_900: '#121214',
 
-    cyan_500: '#61BAFD',
-    yellow_500: '#EBA417'
+    cyan_500: '#61DCFB',
+    yellow_500: '#EBA417',
+    green_900: '#04D361'
   }
 } as const
