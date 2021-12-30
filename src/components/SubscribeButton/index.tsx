@@ -3,7 +3,11 @@ import { Container } from "./styles";
 
 type IButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
 
-export default function SubscribeButton({...props}: IButtonProps) {
+interface ISubscribeButtonProps extends IButtonProps {
+  priceId: string;
+}
+
+export default function SubscribeButton({ priceId, ...props }: ISubscribeButtonProps) {
   return (
     <Container type="button" {...props}>
       Subscribe now
