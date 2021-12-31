@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { FaGithub } from 'react-icons/fa'
+import { FaGoogle } from 'react-icons/fa'
 import { FiX } from 'react-icons/fi'
 
 export const Container = styled.button`
@@ -25,12 +25,12 @@ export const Container = styled.button`
 `;
 
 interface IIconProps {
-  isLogged: boolean;
+  $islogged: boolean;
 }
 
-export const Icon = styled(FaGithub)<IIconProps>`
-  ${({ theme, isLogged }) => css`
-    color: ${isLogged ? theme.colors.green_900 : theme.colors.yellow_500};
+export const Icon = styled(FaGoogle)<IIconProps>`
+  ${({ theme, $islogged }) => css`
+    color: ${$islogged ? theme.colors.green_900 : theme.colors.yellow_500};
     margin-right: 12px;
   `}
 `;
